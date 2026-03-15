@@ -106,27 +106,7 @@ The question this project answers in an interview is not "can you code?" It is "
 
 ## Architecture Overview
 
-```
-┌─────────────────────────────────────────────────────────────────┐
-│                        CommandParser                            │
-│              (interactive terminal, input validation)           │
-└───────────────────────────┬─────────────────────────────────────┘
-                            │
-┌───────────────────────────▼─────────────────────────────────────┐
-│                       MatchingEngine                            │
-│         (orchestrator — wires all subsystems together)          │
-└──┬──────────┬──────────┬──────────┬──────────┬──────────────────┘
-   │          │          │          │          │
-   ▼          ▼          ▼          ▼          ▼
-OrderBook  Portfolio  MarketData  Circuit   EventLogger
-(per sym)  (per      Store       Breaker   (audit log)
-           trader)               Manager
-   │
-   ▼
-TreeMap<Double, Queue<Order>>   ← bids (descending)
-TreeMap<Double, Queue<Order>>   ← asks (ascending)
-HashMap<Long, Order>            ← fast cancellation lookup
-```
+![Design Diagram](nanotrade/data/architecture.png)
 
 The engine is the single point of coordination. It owns the lifecycle of every subsystem — creating them, wiring them together, and ensuring state is persisted after every mutating operation. No subsystem calls another directly; all cross-cutting concerns flow through the engine. This separation means each subsystem can be tested, replaced, or extended independently.
 
