@@ -1,10 +1,12 @@
-# nanotrade
+<p align="center">
+  <img src="nanotrade/data/logo.png" alt="FinPulse AI Logo" width="350" height="220" />
+</p>
 
 [![Java](https://img.shields.io/badge/Java-8-ED8B00?logo=openjdk&logoColor=white)](https://java.com/)
 [![Maven](https://img.shields.io/badge/Maven-3.9-C71A36?logo=apachemaven&logoColor=white)](https://maven.apache.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-2E86C1)](LICENSE)
 [![Build](https://img.shields.io/badge/Build-Passing-27AE60)]()
-[![Lines of Code](https://img.shields.io/badge/Lines_of_Code-1500+-8E44AD)]()
+[![Lines of Code](https://img.shields.io/badge/Lines_of_Code-2000+-8E44AD)]()
 
 A production-grade stock market order matching engine built in pure Java 8 — no frameworks, no infrastructure, no shortcuts. The same core architecture that powers Nasdaq, NYSE, and Binance, implemented from scratch with deliberate data structure choices, greedy matching algorithms, real-time market data tracking, automated circuit breakers, session persistence, and a full audit trail.
 
