@@ -1,0 +1,135 @@
+[2026-03-15 16:54:50.418] SYSTEM     SESSION_START        nanotrade engine started
+[2026-03-15 16:55:00.718] ORDER      ADD                  #3 BUY 100 AAPL @ $150.00 trader=alice
+[2026-03-15 16:55:00.720] ORDER      ADD                  #3 BUY 100 AAPL @ $150.00 trader=alice
+[2026-03-15 16:55:12.424] ORDER      ADD                  #4 SELL 100 AAPL @ $149.00 trader=bob
+[2026-03-15 16:55:12.425] ORDER      ADD                  #4 SELL 100 AAPL @ $149.00 trader=bob
+[2026-03-15 16:55:12.434] MATCH      EXECUTE              buy=#2 sell=#4 qty=100 price=$149.00 symbol=AAPL
+[2026-03-15 16:55:30.870] SYSTEM     SESSION_END          nanotrade engine stopped
+[2026-03-15 16:55:30.870] SYSTEM     ─────────────        
+[2026-03-15 16:58:12.800] SYSTEM     SESSION_START        nanotrade engine started
+[2026-03-15 16:58:19.395] SYSTEM     CLEAR_DATA           all saved data wiped
+[2026-03-15 16:58:29.004] SYSTEM     SESSION_END          nanotrade engine stopped
+[2026-03-15 16:58:29.004] SYSTEM     ─────────────        
+[2026-03-15 16:58:36.188] SYSTEM     SESSION_START        nanotrade engine started
+[2026-03-15 16:58:49.294] SYSTEM     SESSION_START        nanotrade engine started
+[2026-03-15 16:58:51.228] ORDER      ADD                  #1 BUY 100 AAPL @ $150.00 trader=alice
+[2026-03-15 16:58:58.897] ORDER      ADD                  #2 SELL 100 AAPL @ $149.00 trader=bob
+[2026-03-15 16:58:58.910] MATCH      EXECUTE              buy=#1 sell=#2 qty=100 price=$149.00 symbol=AAPL
+[2026-03-15 17:05:57.052] SYSTEM     SESSION_END          nanotrade engine stopped
+[2026-03-15 17:05:57.055] SYSTEM     ─────────────        
+[2026-03-15 17:06:07.168] SYSTEM     SESSION_START        nanotrade engine started
+[2026-03-15 17:06:15.816] ORDER      ADD                  #2 BUY 100 AAPL @ $150.00 trader=alice
+[2026-03-15 17:06:22.343] ORDER      ADD                  #3 SELL 50 AAPL @ $149.00 trader=bob
+[2026-03-15 17:06:22.351] MATCH      EXECUTE              buy=#2 sell=#3 qty=50 price=$149.00 symbol=AAPL
+[2026-03-15 17:06:34.427] ORDER      ADD                  #4 SELL 50 AAPL @ $151.00 trader=carol
+[2026-03-15 17:06:41.379] ORDER      ADD                  #5 BUY 100 AAPL @ $152.00 trader=dave
+[2026-03-15 17:06:41.381] MATCH      EXECUTE              buy=#5 sell=#4 qty=50 price=$152.00 symbol=AAPL
+[2026-03-15 17:14:53.163] SYSTEM     SESSION_END          nanotrade engine stopped
+[2026-03-15 17:14:53.169] SYSTEM     ─────────────        
+[2026-03-15 17:15:01.415] SYSTEM     SESSION_START        nanotrade engine started
+[2026-03-15 17:15:07.938] ORDER      ADD                  #6 BUY 100 AAPL @ $150.00 trader=alice
+[2026-03-15 17:15:13.968] ORDER      ADD                  #7 SELL 100 AAPL @ $149.00 trader=bob
+[2026-03-15 17:15:13.979] MATCH      EXECUTE              buy=#5 sell=#7 qty=50 price=$149.00 symbol=AAPL
+[2026-03-15 17:15:13.980] MATCH      EXECUTE              buy=#2 sell=#7 qty=50 price=$149.00 symbol=AAPL
+[2026-03-15 17:15:22.209] ORDER      REJECT               #-1 reason=AAPL circuit breaker active
+[2026-03-15 17:15:37.581] ORDER      REJECT               #-1 reason=AAPL circuit breaker active
+[2026-03-15 17:15:58.103] ORDER      ADD                  #8 BUY 100 AAPL @ $158.00 trader=dave
+[2026-03-15 17:16:18.048] ORDER      ADD                  #9 BUY 100 AAPL @ $158.00 trader=dave
+[2026-03-15 17:20:33.053] SYSTEM     SESSION_END          nanotrade engine stopped
+[2026-03-15 17:20:33.060] SYSTEM     ─────────────        
+[2026-03-15 17:20:39.864] SYSTEM     SESSION_START        nanotrade engine started
+[2026-03-15 17:20:44.175] SYSTEM     CLEAR_DATA           all saved data wiped
+[2026-03-15 17:20:48.119] SYSTEM     SESSION_END          nanotrade engine stopped
+[2026-03-15 17:20:48.120] SYSTEM     ─────────────        
+[2026-03-15 17:20:54.909] SYSTEM     SESSION_START        nanotrade engine started
+[2026-03-15 17:21:03.103] ORDER      ADD                  #1 BUY 100 AAPL @ $150.00 trader=alice
+[2026-03-15 17:21:08.930] ORDER      ADD                  #2 SELL 100 AAPL @ $149.00 trader=bob
+[2026-03-15 17:21:08.941] MATCH      EXECUTE              buy=#1 sell=#2 qty=100 price=$149.00 symbol=AAPL
+[2026-03-15 17:21:19.111] ORDER      ADD                  #3 BUY 100 AAPL @ $158.00 trader=alice
+[2026-03-15 17:21:34.713] ORDER      ADD                  #4 SELL 100 AAPL @ $157.00 trader=carol
+[2026-03-15 17:21:34.731] MATCH      EXECUTE              buy=#3 sell=#4 qty=100 price=$157.00 symbol=AAPL
+[2026-03-15 17:23:30.990] SYSTEM     SESSION_END          nanotrade engine stopped
+[2026-03-15 17:23:30.990] SYSTEM     ─────────────        
+[2026-03-15 17:23:38.838] SYSTEM     SESSION_START        nanotrade engine started
+[2026-03-15 17:23:44.512] SYSTEM     CLEAR_DATA           all saved data wiped
+[2026-03-15 17:23:47.193] SYSTEM     SESSION_END          nanotrade engine stopped
+[2026-03-15 17:23:47.193] SYSTEM     ─────────────        
+[2026-03-15 17:23:52.313] SYSTEM     SESSION_START        nanotrade engine started
+[2026-03-15 17:24:14.263] ORDER      ADD                  #1 BUY 100 AAPL @ $150.00 trader=alice
+[2026-03-15 17:24:23.938] ORDER      ADD                  #2 SELL 100 AAPL @ $149.00 trader=bob
+[2026-03-15 17:24:23.944] MATCH      EXECUTE              buy=#1 sell=#2 qty=100 price=$149.00 symbol=AAPL
+[2026-03-15 17:24:32.520] ORDER      ADD                  #3 BUY 100 AAPL @ $158.00 trader=alice
+[2026-03-15 17:24:40.746] ORDER      ADD                  #4 SELL 100 AAPL @ $157.00 trader=carol
+[2026-03-15 17:24:40.757] MATCH      EXECUTE              buy=#3 sell=#4 qty=100 price=$157.00 symbol=AAPL
+[2026-03-15 17:26:05.072] SYSTEM     CLEAR_DATA           all saved data wiped
+[2026-03-15 17:26:08.160] SYSTEM     SESSION_END          nanotrade engine stopped
+[2026-03-15 17:26:08.160] SYSTEM     ─────────────        
+[2026-03-15 17:26:15.947] SYSTEM     SESSION_START        nanotrade engine started
+[2026-03-15 17:26:38.773] ORDER      ADD                  #1 BUY 100 AAPL @ $150.00 trader=alice
+[2026-03-15 17:26:44.447] ORDER      ADD                  #2 SELL 100 AAPL @ $157.00 trader=carol
+[2026-03-15 17:26:51.708] ORDER      ADD                  #3 SELL 100 AAPL @ $149.00 trader=bob
+[2026-03-15 17:26:51.740] MATCH      EXECUTE              buy=#1 sell=#3 qty=100 price=$149.00 symbol=AAPL
+[2026-03-15 17:26:54.614] ORDER      ADD                  #4 BUY 100 AAPL @ $150.00 trader=alice
+[2026-03-15 17:26:56.199] ORDER      ADD                  #5 BUY 100 AAPL @ $158.00 trader=alice
+[2026-03-15 17:26:56.212] MATCH      EXECUTE              buy=#5 sell=#2 qty=100 price=$158.00 symbol=AAPL
+[2026-03-15 17:27:59.230] SYSTEM     SESSION_END          nanotrade engine stopped
+[2026-03-15 17:27:59.231] SYSTEM     ─────────────        
+[2026-03-15 17:28:06.295] SYSTEM     SESSION_START        nanotrade engine started
+[2026-03-15 17:28:34.695] SYSTEM     CLEAR_DATA           all saved data wiped
+[2026-03-15 17:28:36.470] SYSTEM     SESSION_END          nanotrade engine stopped
+[2026-03-15 17:28:36.471] SYSTEM     ─────────────        
+[2026-03-15 17:28:41.018] SYSTEM     SESSION_START        nanotrade engine started
+[2026-03-15 17:28:47.978] ORDER      ADD                  #1 BUY 100 AAPL @ $150.00 trader=alice
+[2026-03-15 17:28:53.655] ORDER      ADD                  #2 SELL 100 AAPL @ $149.00 trader=bob
+[2026-03-15 17:28:53.671] MATCH      EXECUTE              buy=#1 sell=#2 qty=100 price=$149.00 symbol=AAPL
+[2026-03-15 17:28:58.752] ORDER      ADD                  #3 BUY 100 AAPL @ $158.00 trader=alice
+[2026-03-15 17:29:05.227] ORDER      ADD                  #4 SELL 100 AAPL @ $157.00 trader=carol
+[2026-03-15 17:29:05.245] MATCH      EXECUTE              buy=#3 sell=#4 qty=100 price=$157.00 symbol=AAPL
+[2026-03-15 17:30:54.022] SYSTEM     CLEAR_DATA           all saved data wiped
+[2026-03-15 17:30:56.644] SYSTEM     SESSION_END          nanotrade engine stopped
+[2026-03-15 17:30:56.644] SYSTEM     ─────────────        
+[2026-03-15 17:31:03.969] SYSTEM     SESSION_START        nanotrade engine started
+[2026-03-15 17:31:13.170] ORDER      ADD                  #1 BUY 100 AAPL @ $150.00 trader=alice
+[2026-03-15 17:31:19.388] ORDER      ADD                  #2 SELL 100 AAPL @ $149.00 trader=bo
+[2026-03-15 17:31:19.402] MATCH      EXECUTE              buy=#1 sell=#2 qty=100 price=$149.00 symbol=AAPL
+[2026-03-15 17:31:26.542] ORDER      ADD                  #3 BUY 100 AAPL @ $158.00 trader=alice
+[2026-03-15 17:31:32.405] ORDER      ADD                  #4 SELL 100 AAPL @ $157.00 trader=carol
+[2026-03-15 17:31:32.417] MATCH      EXECUTE              buy=#3 sell=#4 qty=100 price=$157.00 symbol=AAPL
+[2026-03-15 17:32:06.252] SYSTEM     SESSION_END          nanotrade engine stopped
+[2026-03-15 17:32:06.253] SYSTEM     ─────────────        
+[2026-03-15 17:32:17.157] SYSTEM     SESSION_START        nanotrade engine started
+[2026-03-15 17:32:31.477] ORDER      ADD                  #4 SELL 100 AAPL @ $157.00 trader=carol
+[2026-03-15 17:32:44.283] SYSTEM     CLEAR_DATA           all saved data wiped
+[2026-03-15 17:32:45.369] SYSTEM     SESSION_END          nanotrade engine stopped
+[2026-03-15 17:32:45.369] SYSTEM     ─────────────        
+[2026-03-15 17:32:50.379] SYSTEM     SESSION_START        nanotrade engine started
+[2026-03-15 17:32:57.411] ORDER      ADD                  #1 BUY 100 AAPL @ $150.00 trader=alice
+[2026-03-15 17:33:03.080] ORDER      ADD                  #2 SELL 100 AAPL @ $149.00 trader=bob
+[2026-03-15 17:33:03.096] MATCH      EXECUTE              buy=#1 sell=#2 qty=100 price=$149.00 symbol=AAPL
+[2026-03-15 17:33:10.862] ORDER      ADD                  #3 BUY 100 AAPL @ $158.00 trader=alice
+[2026-03-15 17:33:28.990] SYSTEM     SESSION_START        nanotrade engine started
+[2026-03-15 17:33:31.320] ORDER      ADD                  #4 SELL 100 AAPL @ $157.00 trader=carol
+[2026-03-15 17:33:31.336] MATCH      EXECUTE              buy=#3 sell=#4 qty=100 price=$157.00 symbol=AAPL
+[2026-03-15 17:34:25.499] SYSTEM     CLEAR_DATA           all saved data wiped
+[2026-03-15 17:34:27.252] SYSTEM     SESSION_END          nanotrade engine stopped
+[2026-03-15 17:34:27.252] SYSTEM     ─────────────        
+[2026-03-15 17:34:31.146] SYSTEM     SESSION_START        nanotrade engine started
+[2026-03-15 17:34:35.282] SYSTEM     SESSION_END          nanotrade engine stopped
+[2026-03-15 17:34:35.283] SYSTEM     ─────────────        
+[2026-03-15 17:34:41.322] SYSTEM     SESSION_START        nanotrade engine started
+[2026-03-15 17:34:59.735] ORDER      ADD                  #1 BUY 100 AAPL @ $150.00 trader=alice
+[2026-03-15 17:35:06.061] ORDER      ADD                  #2 SELL 100 AAPL @ $149.00 trader=bob
+[2026-03-15 17:35:06.076] MATCH      EXECUTE              buy=#1 sell=#2 qty=100 price=$149.00 symbol=AAPL
+[2026-03-15 17:35:15.062] ORDER      ADD                  #3 BUY 100 AAPL @ $158.00 trader=alice
+[2026-03-15 17:35:23.925] ORDER      ADD                  #4 SELL 100 AAPL @ $157.00 trader=carol
+[2026-03-15 17:35:23.937] MATCH      EXECUTE              buy=#3 sell=#4 qty=100 price=$157.00 symbol=AAPL
+[2026-03-15 17:35:59.179] SYSTEM     CLEAR_DATA           all saved data wiped
+[2026-03-15 17:36:04.084] SYSTEM     SESSION_END          nanotrade engine stopped
+[2026-03-15 17:36:04.084] SYSTEM     ─────────────        
+[2026-03-15 17:36:25.803] SYSTEM     SESSION_START        nanotrade engine started
+[2026-03-15 17:36:37.970] ORDER      ADD                  #1 BUY 100 AAPL @ $150.00 trader=alice
+[2026-03-15 17:36:44.336] ORDER      ADD                  #2 SELL 100 AAPL @ $149.00 trader=bob
+[2026-03-15 17:36:44.349] MATCH      EXECUTE              buy=#1 sell=#2 qty=100 price=$149.00 symbol=AAPL
+[2026-03-15 17:36:50.652] ORDER      ADD                  #3 BUY 100 AAPL @ $158.00 trader=al
+[2026-03-15 17:37:02.547] ORDER      ADD                  #4 SELL 100 AAPL @ $157.00 trader=carol
+[2026-03-15 17:37:02.559] MATCH      EXECUTE              buy=#3 sell=#4 qty=100 price=$157.00 symbol=AAPL
