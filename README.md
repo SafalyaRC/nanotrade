@@ -55,52 +55,53 @@ The question this project answers in an interview is not "can you code?" It is "
 > All screenshots taken in Windows Terminal. State persists across every restart.
 
 ### Startup & Command Reference
-![Startup](assets/ss-1.png)
+![Startup](data/ss-1.png)
 
 ### Building the Order Book
-![Order Book](assets/ss-2.png)
+![Order Book](data/ss-2.png)
 
 ### Greedy Matching — Multiple Price Levels
-![Matching](assets/ss-3.png)
+![Matching](data/ss-3.png)
 
 ### Order Book After Matching
-![Post Match Book](assets/ss-4.png)
+![Post Match Book](data/ss-4.png)
 
 ### Trade History
-![Trade History](assets/ss-5.png)
+![Trade History](data/ss-5.png)
 
 ### Portfolio Tracking — Holdings & P&L
-![Portfolio](assets/ss-6.png)
+![Portfolio](data/ss-6.png)
 
 ### Market Data — OHLCV, VWAP, Price History
-![Market Data](assets/ss-7.png)
+![Market Data](data/ss-7.png)
 
 ### Multi-Symbol Support
-![Multi Symbol](assets/ss-8.png)
+![Multi Symbol](data/ss-8.png)
 
 ### Order Cancellation
-![Cancellation](assets/ss-9.png)
+![Cancellation](data/ss-9.png)
 
 ### Circuit Breaker — Auto Halt
-![Circuit Breaker Triggered](assets/ss-10.png)
+![Circuit Breaker Triggered](data/ss-10.png)
 
 ### Circuit Breaker — Rejection & Manual Resume
-![Circuit Breaker Resume](assets/ss=11.png)
+![Circuit Breaker Resume](data/ss=11.png)
 
 ### Live Session Performance Metrics
-![Performance](assets/ss-12.png)
+![Performance](data/ss-12.png)
 
 ### Stress Test — 10,000 Orders
-![Stress Test](assets/ss-13.png)
+![Stress Test](data/ss-13.png)
 
 ### Audit Log
-![Audit Log](assets/ss-14.png)
+![Audit Log](data/ss-14.png)
 
 ### Persistence — Session End
-![Session End](assets/ss-15-a.png)
+![Session End](data/ss-15-a.png)
 
 ### Persistence — State Restored on Restart
-![Session Restored](assets/ss-15-b.png)
+![Session Restored](data/ss-15-b.png)
+
 ---
 
 ## Architecture Overview
