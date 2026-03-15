@@ -85,7 +85,7 @@ The question this project answers in an interview is not "can you code?" It is "
 ![Circuit Breaker Triggered](nanotrade/data/ss-10.png)
 
 ### Circuit Breaker — Rejection & Manual Resume
-![Circuit Breaker Resume](nanotrade/data/ss=11.png)
+![Circuit Breaker Resume](nanotrade/data/ss-11.png)
 
 ### Live Session Performance Metrics
 ![Performance](nanotrade/data/ss-12.png)
